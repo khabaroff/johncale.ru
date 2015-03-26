@@ -1,0 +1,83 @@
+h1 {
+font-family: 'YefimovBold';
+font-size: 5rem;
+/*margin: 0;*/
+}
+
+h1.smaller {font-size: 4rem;}
+
+p {
+font-size: 1.3rem;
+font-family: 'Baltica';
+margin: 0;
+text-indent: 1.9rem;
+text-align: justify;
+}
+
+p.noindent {text-indent: 0;}
+
+.author {font-size: 0.8rem;}
+
+blockquote {
+font-family: 'BalticaItalic';
+font-style: italic;
+font-size: 1.3rem;
+text-align: center;
+color: #ff4b00;
+page-break-inside: avoid; 
+padding: 2.5625rem 0;
+display: block;
+line-height: 1.6;
+}
+
+
+.spacer {height: 2.5625rem;}
+
+.large-4 {margin-bottom: 40px;}
+
+
+
+/* audio --------------------------------------------------------------------------------- */
+#audioplayer{
+	width: 100%;
+	height: 100px;
+	margin:  auto;
+  position: relative; 
+}
+
+#pButton{z-index: 1000;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    height: 50px; 
+    width: 50px;
+    border: 1px solid red;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.play{background: url('http://www.alexkatz.me/codepen/images/play.png') ;}
+.pause{background: url('http://www.alexkatz.me/codepen/images/pause.png') ;}
+
+.timeline { 
+	width: 100%; 
+	height: 100px;	  
+}
+
+.track1  { 
+ 	background: url('../mp3/192_john_cale-the_soul_of_carmen_miranda.png'); 
+  	background-size: 100% 100px; 
+	}
+
+#playhead{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+	width: 0;
+	height: 100px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+/* /audio --------------------------------------------------------------------------------- */
