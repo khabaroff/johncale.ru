@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кармен Миранда, the Breeders и Робер Брессон</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts/font.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/theia-sticky-sidebar.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/vendor/jquery.hypher.js"></script>
+    <script src="js/vendor/ru.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+<div class="row">
+    <div class="large-16 columns">
+        <img src="./img/02/01.jpg">
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="large-4 medium-3 columns"></div>
+    <div class="large-2 medium-0 columns"></div>
+    <div class="large-10 medium-13 columns">
+        <h1 class="smaller">
+            Кармен Миранда, the&nbsp;Breeders и&nbsp;Робер Брессон
+        </h1>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="large-4 medium-3 columns player">
+        <audio id="music" preload="true">
+        <source src="mp3/192_john_cale-the_soul_of_carmen_miranda.mp3">
+        <source src="mp3/192_john_cale-the_soul_of_carmen_miranda.ogg"></audio>
+        <div id="audioplayer">
+            <div class="timeline track1"></div>
+            <div id="playhead"></div>
+        </div><button class="play" id="pButton" onclick="play()"></button>
+    </div>
+    <div class="large-2 medium-0 columns"></div>
+    <div class="large-10 medium-13 columns">
+        <p class="noindent">
+            Since the soul of&nbsp;Carmen Miranda had captured the mind of&nbsp;man&nbsp;&mdash; такая лёгкая летящая, прото-иновская (ENO) вещь, замыкающая странную Words For The Dying, на&nbsp;стихи Дилана Томаса&nbsp;&mdash; но&nbsp;эта песня&nbsp;&mdash; кейловская.
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row spacer">
+    <div class="large-16 columns"></div>
+</div>
+
+
+<div class="row">
+    <div class="large-4 medium-3 columns">
+        <img src="./img/02/02.jpg" style="width:100%;">
+    </div>
+    <div class="large-2 medium-0 columns"></div>
+    <div class="large-10 medium-13 columns">
+        <p>
+            Отрывок из&nbsp;статьи в&nbsp;&laquo;Забриски Rider&raquo; &#8470;&nbsp;9, 1999. Ия&nbsp;Моцкобили &laquo;Джон Кейл&raquo;:
+        </p>
+        <p>
+            <i>Ия&nbsp;Моцкобили:</i> Не&nbsp;могли&nbsp;бы вы&nbsp;поделиться воспоминаниями о&nbsp;Нико и&nbsp;Патти Смит, легендарных певицах. Первой уже нет в&nbsp;живых, а&nbsp;вторая, напротив, вернулась недавно на&nbsp;сцену.
+        </p>
+        <p>
+            <i>Джон Кейл:</i> Они были разные, одна из&nbsp;Европы&nbsp;&mdash; Нико приехала из&nbsp;Германии, Патти&nbsp;&mdash; американка. Для Патти Смит очень большое значение имела семья, это видно и&nbsp;по&nbsp;ее&nbsp;альбомам и&nbsp;по&nbsp;отношению к&nbsp;музыкантам. А&nbsp;Нико была одиночка, она была плохо приспособлена к&nbsp;жизни, к&nbsp;тому&nbsp;же в&nbsp;Америке у&nbsp;нее никого не&nbsp;было. Она писала песни на&nbsp;чужом языке. Надо иметь определенное мужество так быстро прожить свою жизнь, как она. Чем-то она была похожа на&nbsp;Джима Моррисона. Впрочем, не&nbsp;хочу делать ее&nbsp;героем.
+        </p>
+        <p>
+            <i>Ия&nbsp;Моцкобили:</i> Поддерживаете&nbsp;ли вы&nbsp;связь с&nbsp;Патти Смит в&nbsp;настоящее время?
+        </p>
+        <p>
+            <i>Джон Кейл:</i> Я&nbsp;бы сказал, что поддерживаю связь не&nbsp;только с&nbsp;Патти Смит, но&nbsp;и&nbsp;с&nbsp;Нико.
+        </p>
+    </div>
+</div>
+
+
+
+<script>
+        
+         $(document).ready(function() {
+               $('.row .sticky').theiaStickySidebar();
+ 				       
+               $('.player').each(initMyPlayer);
+		
+
+
+       	});
+
+        
+        jQuery(function ($) {$('p').hyphenate('ru');});
+        // $(document).foundation();
+       
+
+</script>
+
+ 
+
+     
+  </body>
+</html>
+
+ 
+<!-- 
+ 
+[22.03.15, 21:38:57] Саша Баталов: ты делай сначала выборку плееров всех, $(‘.player’)
+[22.03.15, 21:39:37] Саша Баталов: но ты пробегись по ним так: $(‘.player’).each(initMyPlayer)
+[22.03.15, 21:39:54] Саша Баталов: initMyPlayer - это твоя обертка того кода, который есть
+[22.03.15, 21:40:18] Саша Баталов: и внутри него тебе нужно сделать так: 
+var $player = $(this)
+[22.03.15, 21:41:12] Саша Баталов: each передаст контекст внутрь твой функции(в качестве контекста - элемент плеера).
+[22.03.15, 21:42:23] Саша Баталов: так как таймлайнов у тебя куча тоже, а нужен тебе только тот, который пренадлежит текущему плееру(но который в текущем контексте), то делаешь так: var $timeline = $player.find(‘.timeline’)
+[22.03.15, 21:42:43] Саша Баталов: ну и так далее -->
