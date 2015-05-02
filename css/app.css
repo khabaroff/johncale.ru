@@ -33,9 +33,44 @@ line-height: 1.6;
 
 .spacer {height: 2.5625rem;}
 
+.orange {
+    color: #ff4b00;
+    border-bottom: 1px dashed #ff4b00;
+}
+
+.orange:hover {
+    color: #ff0000;
+}
+
 .large-4 {margin-bottom: 40px;}
 
+@media only screen and (min-width: 64.063em) {
+    .large-4.kim:hover {
+        height: 0;
+    }
 
-.large-4.kim:hover {height: 0;}
-.large-4.kim:hover > .kimbg {background: url("../img/02/04.jpg"); width: 505px; height: 726px; position: relative; top: -226px;}
-.large-4.kim:hover > .nokimbg {display: none;}
+    .large-4.kim:hover > .kimbg {
+        background: url("../img/02/04.jpg");
+        width: 505px;
+        height: 726px;
+        position: relative;
+        top: -226px;
+    }
+
+    .large-4.kim:hover > .author {
+        display: none;
+    }
+
+    .large-4.kim:hover > .nokimbg {
+        display: none;
+    }
+
+    .coub2 {
+        margin-top: -40px;
+    }
+
+    .coub3 {
+        margin-top: -28px;
+    }
+
+}
