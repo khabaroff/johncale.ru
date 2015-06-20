@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/foundation.css"/>
     <link rel="stylesheet" type="text/css" href="css/fonts/font.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" href="css/animsition.css">
     <script src="js/vendor/modernizr.js"></script>
 
 
 </head>
 <body>
 
+<section class="animsition">
 
 <div class="row">
     <div class="large-16 columns">
@@ -138,14 +140,19 @@
     </div>
 </div>
 
-<div class="row spacer"></div>
+    <div class="row spacer"><a href="02.html" class="animsition-link">animsition link 1</a></div>
 
-<script src="js/foundation.min.js"></script>
+</section>
+
+
 <script src="js/vendor/jquery.js"></script>
+<script src="js/jquery.animsition.min.js"></script>
+<script src="js/foundation.min.js"></script>
 <script src="js/vendor/theia-sticky-sidebar.js"></script>
 
 <script src="js/vendor/jquery.hypher.js"></script>
 <script src="js/vendor/ru.js"></script>
+
 <script>
 
     $(document).ready(function () {
@@ -156,8 +163,36 @@
         $('p').hyphenate('ru');
     });
 
-    // $(document).foundation();
+</script>
 
+
+<script>
+    $(document).ready(function () {
+
+        $(".animsition").animsition({
+
+            inClass: 'fade-in-up-sm',
+            outClass: 'fade-out-up-sm',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+// e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            unSupportCss: ['animation-duration',
+                '-webkit-animation-duration',
+                '-o-animation-duration'
+            ],
+//"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+//The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+
+            overlay: false,
+
+            overlayClass: 'animsition-overlay-slide',
+            overlayParentElement: 'body'
+        });
+    });
 
 </script>
 
