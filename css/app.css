@@ -53,6 +53,51 @@ a:hover {
 
 .large-4 {margin-bottom: 40px;}
 
+#headerpanel {
+    background-image: url(../img/00/00.jpg);
+    background-position: center right;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+
+}
+
+#headerpanel h1 {
+    color: #000000;
+}
+
+#headerpanel .title,
+#headerpanel .columns {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+#headerpanel .spanCell {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#headerpanel .leftcell {
+    width: 60%
+}
+
+#headerpanel .rightcell {
+    width: 40%
+}
+
+.ptitle {
+    font-family: 'BalticaItalic';
+    font-style: italic;
+    color: #000000;
+}
+
+
+
 @media only screen and (min-width: 64.063em) {
     .large-4.kim:hover {
         height: 0;
@@ -82,7 +127,39 @@ a:hover {
         margin-top: -28px;
     }
 
+
 }
+
+@media only screen and (max-width: 75em) {
+
+    #headerpanel .leftcell {
+        width: 50%
+    }
+
+    #headerpanel .rightcell {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width: 60em) {
+
+    #headerpanel .leftcell {
+        display: none;
+    }
+
+    #headerpanel .rightcell {
+        width: 100%;
+        text-align: center;
+    }
+
+    #headerpanel .ptitle {
+        text-align: center;
+    }
+}
+
+
+
+
 
 @media only screen and (min-width: 4.063em) {
     img {
