@@ -54,7 +54,7 @@ a:hover {
 .large-4 {margin-bottom: 40px;}
 
 #headerpanel {
-    background-image: url(../img/00/00.jpg);
+    background-image: url(../img/00_john_cale_ru_cover.jpg);
     background-position: center right;
     background-size: cover;
     text-align: center;
@@ -96,6 +96,9 @@ a:hover {
     color: #000000;
 }
 
+.centertext {
+    text-align: center;
+}
 
 
 @media only screen and (min-width: 64.063em) {
@@ -104,7 +107,7 @@ a:hover {
     }
 
     .large-4.kim:hover > .kimbg {
-        background: url("../img/02/04.jpg");
+        background: url("../img/02_04.jpg");
         width: 505px;
         height: 726px;
         position: relative;
