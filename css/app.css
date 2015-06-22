@@ -191,16 +191,16 @@ iframe {
         display: none;
     }
 
-    .coub {
-        margin-top: -80px;
-    }
+    /*.coub {*/
+    /*margin-top: -80px;*/
+    /*}*/
 
     .coubintitle {
-        margin-top: -68px;
+        margin-top: 20px;
     }
 
     .coubinleft {
-        margin-top: -40px;
+        margin-top: 20px;
     }
 
 }
@@ -233,9 +233,9 @@ iframe {
 }
 
 @media only screen and (max-width: 64.063em) {
-    .coub {
-        margin-top: -110px;
-    }
+    /*.coub {*/
+    /*margin-top: -110px;*/
+    /*}*/
 
 }
 
@@ -245,9 +245,9 @@ iframe {
         margin-bottom: 10px;
     }
 
-    .coub, .coubinleft {
-        margin-top: 0;
-    }
+    /*.coub, .coubinleft {*/
+    /*margin-top: 0;*/
+    /*}*/
 
 }
 
