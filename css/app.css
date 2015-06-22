@@ -115,7 +115,6 @@ a:hover {
     cursor: pointer;
 }
 
-/*.arrow:hover {height: 90%; border: 1px solid red; top: 5%; background-size: contain; cursor: pointer;}*/
 
 .next::before {
     content: "";
@@ -159,6 +158,15 @@ a:hover {
 
 .prev {
     left: 1%;
+}
+
+iframe {
+    position: absolute;
+}
+
+.iframewrapper {
+    position: relative;
+    padding-bottom: 100%;
 }
 
 
