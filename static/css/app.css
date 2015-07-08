@@ -1,0 +1,265 @@
+h1 {
+    font-family: 'YefimovBold';
+    font-size: 5rem;
+    /*margin: 0;*/
+}
+
+h1.smaller {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.3rem;
+    font-family: 'Baltica';
+    margin: 0;
+    text-indent: 1.9rem;
+    text-align: justify;
+}
+
+p.noindent {
+    text-indent: 0;
+}
+
+.author {
+    font-size: 0.8rem;
+}
+
+blockquote {
+    font-family: 'BalticaItalic';
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #ff4b00;
+    page-break-inside: avoid;
+    padding: 2.5625rem 0;
+    display: block;
+    line-height: 1.6;
+}
+
+a {
+    color: #ff4b00;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.spacer {
+    height: 2.5625rem;
+}
+
+.subtitile {
+    font-weight: 700;
+}
+
+.cover {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.large-4 {
+    margin-bottom: 40px;
+}
+
+#headerpanel {
+    background-image: url(../img/00_john_cale_ru_cover.jpg);
+    background-position: center right;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+
+}
+
+#headerpanel h1 {
+    color: #000000;
+}
+
+#headerpanel .title,
+#headerpanel .columns {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+#headerpanel .spanCell {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#headerpanel .leftcell {
+    width: 60%
+}
+
+#headerpanel .rightcell {
+    width: 40%
+}
+
+.ptitle {
+    font-family: 'BalticaItalic';
+    font-style: italic;
+    color: #000000;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.arrow {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    top: 45%;
+    z-index: 111;
+    overflow: hidden;
+}
+
+.next:hover::before,
+.prev:hover::before {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.next::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url(../img/arrow.png);
+    no-repeat;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    opacity: 0.3;
+}
+
+.prev::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url(../img/arrow.png);
+    no-repeat;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 0.3;
+}
+
+.next {
+    right: 1%;
+}
+
+.prev {
+    left: 1%;
+}
+
+iframe {
+    position: absolute;
+}
+
+.relat {
+    position: relative;
+}
+
+.iframewrapper {
+    position: relative;
+    padding-bottom: 100%;
+}
+
+@media only screen and (min-width: 64.063em) {
+    .large-4.kim:hover {
+        height: 0;
+    }
+
+    .large-4.kim:hover > .kimbg {
+        background: url("../img/02_04.jpg");
+        width: 505px;
+        height: 726px;
+        position: relative;
+        top: -226px;
+    }
+
+    .large-4.kim:hover > .author {
+        display: none;
+    }
+
+    .large-4.kim:hover > .nokimbg {
+        display: none;
+    }
+
+    /*.coub {*/
+    /*margin-top: -80px;*/
+    /*}*/
+    .coubintitle {
+        margin-top: 20px;
+    }
+
+    .coubinleft {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 75em) {
+
+    #headerpanel .leftcell {
+        width: 50%
+    }
+
+    #headerpanel .rightcell {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width: 60em) {
+
+    #headerpanel .leftcell {
+        display: none;
+    }
+
+    #headerpanel .rightcell {
+        width: 100%;
+        text-align: center;
+    }
+
+    #headerpanel .ptitle {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 64.063em) {
+    /*.coub {*/
+    /*margin-top: -110px;*/
+    /*}*/
+
+}
+
+@media only screen and (max-width: 40em) {
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /*.coub, .coubinleft {*/
+    /*margin-top: 0;*/
+    /*}*/
+
+}
+
+
