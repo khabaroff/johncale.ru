@@ -4,9 +4,12 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Джон Кейл — вне и внутри синдиката снов — JohnCale.ru</title>
-    <link rel="stylesheet" href="static/css/foundation.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/foundation.css"/>
     <link rel="stylesheet" type="text/css" href="static/css/fonts/font.css">
     <link rel="stylesheet" type="text/css" href="static/css/app.css">
+
+    <link rel="stylesheet" type="text/css" href="static/css/animations.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/component.css"/>
 
     <meta property="og:url" content="http://johncale.ru/"/>
     <meta property="og:site_name" content="Джон Кейл — вне и внутри синдиката снов"/>
@@ -26,11 +29,12 @@
 
 
     <script type="text/javascript" src="static/js/load-min.js"></script>
+    <script type="text/javascript" src="static/js/vendor/jquery.js"></script>
 
 
 
     <script type="text/javascript">
-        load('static/js/vendor/jquery.js').then('static/js/foundation.min.js').then('static/js/vendor/jquery.hypher.js').then('static/js/vendor/ru.js').then('static/js/vendor/theia-sticky-sidebar.js').thenRun(function () {
+        load('static/js/foundation.min.js').then('static/js/vendor/jquery.hypher.js').then('static/js/vendor/ru.js').then('static/js/vendor/theia-sticky-sidebar.js').thenRun(function () {
 
 
 
@@ -95,7 +99,7 @@
 <!-- End Google Tag Manager -->
 
 
-<div id="content">
+<div class="pt-perspective">
     {% block content %}
     {% endblock %}
 </div>
@@ -109,6 +113,9 @@
 
 
 </script>
+
+
+<script src="static/js/pagetransitions.js"></script>
 
 
 </body>
