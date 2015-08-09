@@ -33,22 +33,7 @@
 
 
 
-    <script type="text/javascript">
-        load('static/js/foundation.min.js').then('static/js/vendor/jquery.hypher.js').then('static/js/vendor/ru.js').then('static/js/vendor/theia-sticky-sidebar.js').thenRun(function () {
 
-
-
-            $(document).ready(function () {
-                $('.row .sticky').theiaStickySidebar();
-            });
-
-            jQuery(function ($) {
-                $('p').hyphenate('ru');
-            });
-
-
-        });
-    </script>
 
 
     <link rel="apple-touch-icon" sizes="57x57" href="http://johncale.ru/static/img/favicons/apple-touch-icon-57x57.png">
@@ -106,12 +91,18 @@
 
 
 <script type="text/javascript" src="static/js/layzr.min.js"></script>
+<script type="text/javascript">
+    var layzr = new Layzr({});
+</script>
 
 <script type="text/javascript">
+    load('static/js/foundation.min.js').then('static/js/vendor/jquery.hypher.js').then('static/js/vendor/ru.js').then('static/js/vendor/theia-sticky-sidebar.js').thenRun(function () {
 
-    var layzr = new Layzr({});
-
-
+        $(document).ready(function () {
+            $('.row .sticky').theiaStickySidebar();
+            $('p').hyphenate('ru');
+        });
+    });
 </script>
 
 
