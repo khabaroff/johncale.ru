@@ -1,16 +1,16 @@
 .pt-page-moveFromLeft {
-    -webkit-animation: moveFromLeft .8s ease both;
-    animation: moveFromLeft .8s ease both;
+    -webkit-animation: moveFromLeft 1.8s ease both;
+    animation: moveFromLeft 1.8s ease both;
 }
 
 .pt-page-moveFromRight {
-    -webkit-animation: moveFromRight .8s ease both;
-    animation: moveFromRight .8s ease both;
+    -webkit-animation: moveFromRight 1.8s ease both;
+    animation: moveFromRight 1.8s ease both;
 }
 
 .pt-page-fade {
-    -webkit-animation: fade .4s ease both;
-    animation: fade .4s ease both;
+    -webkit-animation: fade .8s ease both;
+    animation: fade .8s ease both;
 }
 
 
@@ -18,27 +18,27 @@
 
 @-webkit-keyframes moveFromLeft {
     from {
-        -webkit-transform: translateX(-100%);
+        -webkit-transform: translateX(-50%);
     }
 }
 
 @keyframes moveFromLeft {
     from {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
 }
 
 @-webkit-keyframes moveFromRight {
     from {
-        -webkit-transform: translateX(100%);
+        -webkit-transform: translateX(50%);
     }
 }
 
 @keyframes moveFromRight {
     from {
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
     }
 }
 
@@ -46,7 +46,7 @@
     from {
     }
     to {
-        opacity: 0.3;
+        opacity: 0;
     }
 }
 
@@ -54,7 +54,7 @@
     from {
     }
     to {
-        opacity: 0.3;
+        opacity: 0;
     }
 }
 

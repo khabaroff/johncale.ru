@@ -119,9 +119,9 @@ var transition = (function () {
 })();
 
 
-var $pages = $('.pt-page')
+var $pages = $('.pt-page');
 
-transition.init($pages)
+transition.init($pages);
 
 var current = 0;
 
@@ -138,7 +138,6 @@ $('.right').on('click', function () {
     }
 })
 
-
 $('.left').on('click', function () {
 
     var nextPage = current - 1;
@@ -150,4 +149,13 @@ $('.left').on('click', function () {
     if (animationRuned) {
         current = nextPage;
     }
-})
+});
+//
+//$(document).keydown(function(e) {
+//    if(e.which == 37) { // left
+//        $('.left').trigger("click");
+//    }
+//    else if(e.which == 39) { // right
+//        $('.right').trigger("click");
+//    }
+//});
