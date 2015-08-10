@@ -10,13 +10,13 @@ var gulp = require('gulp'),
 
 var path = {
     build: {
-        html: '/'
+        html: '../'
     },
     src: {
-        html: './templates/index.html'
+        html: '../templates/index.html'
     },
     watch: {
-        html: './templates/*.html'
+        html: '../templates/*.html'
     }
 };
 
