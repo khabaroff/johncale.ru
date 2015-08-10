@@ -1,3 +1,21 @@
+
+::selection {
+    background: #ffa79b;
+}
+
+::-moz-selection {
+    background: #ffa79b;
+}
+
+/*blockquote::selection {*/
+/*background: #000000;*/
+/*}*/
+/*blockquote::-moz-selection {*/
+/*background: #000000;*/
+/*}*/
+
+
+
 h1 {
     font-family: 'YefimovBold';
     font-size: 5rem;
@@ -133,8 +151,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background: url(../img/arrow.png);
-    no-repeat;
+    background: url(../img/arrow.png) no-repeat;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -151,8 +168,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-    background: url(../img/arrow.png);
-    no-repeat;
+    background: url(../img/arrow.png) no-repeat;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -261,3 +277,4 @@ iframe {
     /*}*/
 
 }
+
