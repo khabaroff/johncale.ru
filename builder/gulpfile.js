@@ -1,4 +1,4 @@
-//http://habrahabr.ru/post/250569/
+////http://habrahabr.ru/post/250569/
 
 'use strict';
 

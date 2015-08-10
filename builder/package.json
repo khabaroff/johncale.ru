@@ -2,7 +2,7 @@
   "name": "habr",
   "version": "1.0.0",
   "description": "",
-  "author": "",
+  "author": "khabaroff",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.2.3",
