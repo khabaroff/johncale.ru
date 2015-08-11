@@ -118,44 +118,46 @@ var transition = (function () {
     }
 })();
 
+jQuery(function() {
+	var $pages = $('.pt-page');
 
-var $pages = $('.pt-page');
+	transition.init($pages);
 
-transition.init($pages);
+	var current = 0;
 
-var current = 0;
+	$('.right').on('click', function () {
 
-$('.right').on('click', function () {
+	    var nextPage = current + 1;
+	    if (nextPage > $pages.length - 1) {
+	        nextPage = 0;
+	    }
+	    var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), 5)
 
-    var nextPage = current + 1;
-    if (nextPage > $pages.length - 1) {
-        nextPage = 0;
-    }
-    var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), 5)
+	    if (animationRuned) {
+	        current = nextPage;
+	    }
+	})
 
-    if (animationRuned) {
-        current = nextPage;
-    }
+	$('.left').on('click', function () {
+
+	    var nextPage = current - 1;
+	    if (nextPage < 0) {
+	        nextPage = $pages.length - 1;
+	    }
+	    var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), 6)
+
+	    if (animationRuned) {
+	        current = nextPage;
+	    }
+	});
+	
+	//
+	//$(document).keydown(function(e) {
+	//    if(e.which == 37) { // left
+	//        $('.left').trigger("click");
+	//    }
+	//    else if(e.which == 39) { // right
+	//        $('.right').trigger("click");
+	//    }
+	//});
 })
-
-$('.left').on('click', function () {
-
-    var nextPage = current - 1;
-    if (nextPage < 0) {
-        nextPage = $pages.length - 1;
-    }
-    var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), 6)
-
-    if (animationRuned) {
-        current = nextPage;
-    }
-});
-//
-//$(document).keydown(function(e) {
-//    if(e.which == 37) { // left
-//        $('.left').trigger("click");
-//    }
-//    else if(e.which == 39) { // right
-//        $('.right').trigger("click");
-//    }
-//});
