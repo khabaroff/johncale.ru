@@ -17,7 +17,7 @@
 
 
 h1 {
-    font-family: 'YefimovBold';
+    font-family: 'YefimovBold' sans-serif;
     font-size: 5rem;
     /*margin: 0;*/
 }
@@ -28,7 +28,7 @@ h1.smaller {
 
 p {
     font-size: 1.3rem;
-    font-family: 'Baltica';
+    font-family: 'Baltica' sans-serif;
     margin: 0;
     text-indent: 1.9rem;
     text-align: justify;
@@ -43,7 +43,7 @@ p.noindent {
 }
 
 blockquote {
-    font-family: 'BalticaItalic';
+    font-family: 'BalticaItalic' sans-serif;
     font-style: italic;
     font-size: 1.3rem;
     text-align: center;
@@ -119,7 +119,7 @@ a:hover {
 }
 
 .ptitle {
-    font-family: 'BalticaItalic';
+    font-family: 'BalticaItalic' sans-serif;
     font-style: italic;
     color: #000000;
 }
@@ -198,6 +198,14 @@ iframe {
     padding-bottom: 100%;
 }
 
+.coubintitle {
+    margin-top: 20px;
+}
+
+.coubinleft {
+    margin-top: 20px;
+}
+
 @media only screen and (min-width: 64.063em) {
     .large-4.kim:hover {
         height: 0;
@@ -217,17 +225,6 @@ iframe {
 
     .large-4.kim:hover > .nokimbg {
         display: none;
-    }
-
-    /*.coub {*/
-    /*margin-top: -80px;*/
-    /*}*/
-    .coubintitle {
-        margin-top: 20px;
-    }
-
-    .coubinleft {
-        margin-top: 20px;
     }
 
 }
