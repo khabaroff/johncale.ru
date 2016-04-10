@@ -118,46 +118,282 @@ var transition = (function () {
     }
 })();
 
+
+
+
 jQuery(function() {
 	var $pages = $('.pt-page');
 
 	transition.init($pages);
 
 	var current = 0;
+    var effect = 5;
 
-	$('.right').on('click', function () {
+    $('.m00').on('click', function () {
+        scroll(0,0);
+        var nextPage = 0;
 
-	    var nextPage = current + 1;
-	    if (nextPage > $pages.length - 1) {
-	        nextPage = 0;
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+    $('.m01').on('click', function () {
+        scroll(0,0)
+        var nextPage = 1;
+
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+    $('.m02').on('click', function () {
+        scroll(0,0)
+        var nextPage = 2;
+
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+    $('.m03').on('click', function () {
+        scroll(0,0)
+        var nextPage = 3;
+
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+    $('.m04').on('click', function () {
+        scroll(0,0)
+        var nextPage = 4;
+
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+    $('.m05').on('click', function () {
+        scroll(0,0)
+        var nextPage = 5;
+
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+    $('.m06').on('click', function () {
+        scroll(0,0)
+        var nextPage = 6;
+
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+    $('.m07').on('click', function () {
+        scroll(0,0)
+        var nextPage = 7;
+
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+    $('.m08').on('click', function () {
+        scroll(0,0)
+        var nextPage = 8;
+
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+    $('.m09').on('click', function () {
+        scroll(0,0)
+        var nextPage = 9;
+
+        if (nextPage > current) {
+            effect = 5;
+        } else if (nextPage < current) {
+            effect = 6;
+        }
+
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), effect)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+        console.log(current)
+    });
+
+
+
+
+
+
+    $('.rarrow').on('click', function () {
+
+        var nextPage = current + 1;
+        if (nextPage > $pages.length - 1) {
+            nextPage = 0;
+        }
+        var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), 5)
+
+        if (animationRuned) {
+            current = nextPage;
+        }
+
+        ga('send', 'event', 'click', current);
+
+    })
+
+
+
+	$(document).keydown(function(e) {
+
+        scroll(0,0)
+
+	    if(e.which == 37) { // left
+
+
+            var nextPage = current - 1;
+            if (nextPage < 0) {
+                nextPage = $pages.length - 1;
+            }
+            var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), 6)
+
+            if (animationRuned) {
+                current = nextPage;
+            }
+
+            ga('send', 'event', 'click', current);
+            console.log(current)
+
+
 	    }
-	    var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), 5)
+	    else if(e.which == 39) { // right
 
-	    if (animationRuned) {
-	        current = nextPage;
-	    }
-	})
 
-	$('.left').on('click', function () {
+            var nextPage = current + 1;
+            if (nextPage > $pages.length - 1) {
+                nextPage = 0;
+            }
+            var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), 5)
 
-	    var nextPage = current - 1;
-	    if (nextPage < 0) {
-	        nextPage = $pages.length - 1;
-	    }
-	    var animationRuned = transition.animate($pages.eq(current), $pages.eq(nextPage), 6)
+            if (animationRuned) {
+                current = nextPage;
+            }
+            ga('send', 'event', 'click', current);
 
-	    if (animationRuned) {
-	        current = nextPage;
+            console.log(current)
+
+
 	    }
 	});
-	
-	//
-	//$(document).keydown(function(e) {
-	//    if(e.which == 37) { // left
-	//        $('.left').trigger("click");
-	//    }
-	//    else if(e.which == 39) { // right
-	//        $('.right').trigger("click");
-	//    }
-	//});
+
+
+
 })

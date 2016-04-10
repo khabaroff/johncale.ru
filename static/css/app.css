@@ -7,17 +7,8 @@
     background: #ffa79b;
 }
 
-/*blockquote::selection {*/
-/*background: #000000;*/
-/*}*/
-/*blockquote::-moz-selection {*/
-/*background: #000000;*/
-/*}*/
-
-
-
 h1 {
-    font-family: 'YefimovBold' sans-serif;
+    font-family: 'YefimovBold', sans-serif;
     font-size: 5rem;
     /*margin: 0;*/
 }
@@ -28,7 +19,7 @@ h1.smaller {
 
 p {
     font-size: 1.3rem;
-    font-family: 'Baltica' sans-serif;
+    font-family: 'Baltica', sans-serif;
     margin: 0;
     text-indent: 1.9rem;
     text-align: justify;
@@ -43,7 +34,7 @@ p.noindent {
 }
 
 blockquote {
-    font-family: 'BalticaItalic' sans-serif;
+    font-family: 'BalticaItalic', sans-serif;
     font-style: italic;
     font-size: 1.3rem;
     text-align: center;
@@ -191,6 +182,7 @@ iframe {
 
 .relat {
     position: relative;
+    margin: auto;
 }
 
 .iframewrapper {
@@ -275,3 +267,169 @@ iframe {
 
 }
 
+.full {
+    height: 100%;
+}
+
+.enter {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bgvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .bgvid {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .bgvid {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+/* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
+@supports (object-fit: cover) {
+    .bgvid {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.maintitle {
+    color: white;
+    text-align: center;
+}
+
+.subtitle {
+    color: white;
+    font-family: 'BalticaItalic', sans-serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: -22px;
+}
+
+.v-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.hover {
+    cursor: pointer;
+}
+
+.black {
+    color: black
+}
+
+.ml20 {
+    margin-left: 20%;
+}
+
+.menuhub {
+    display: -webkit-box; /* Android 4.3-, Safari без оптимизации */
+    -webkit-box-pack: justify; /* Android 4.3-, Safari без оптимизации */
+    display: -webkit-flex; /* оптимизация для Safari */
+    webkit-justify-content: space-between; /* оптимизация для Safari */
+    display: flex;
+    justify-content: space-between;
+    text-align: justify; /* IE10-, Firefox 12-22 */
+    text-align-last: justify; /* IE10-, Firefox 12-22 */
+    height: 100px;
+}
+
+.menu {
+    width: 9%;
+    height: 100%;
+    display: inline-block;
+    display: -webkit-box;
+    opacity: .2;
+    background-size: cover;
+    background-position: center;
+}
+
+.currentmenu {
+    opacity: 1;
+}
+
+.menu:hover {
+    background-color: #ffa37a;
+    background-blend-mode: multiply;
+    opacity: 1;
+    cursor: pointer;
+    background-size: 120%;
+    transition: 500ms linear;
+}
+
+.currentmenu:hover {
+    background-color: #fff;
+    background-blend-mode: multiply;
+    opacity: 1;
+    cursor: auto;
+    background-size: 100%;
+}
+
+.m00 {
+    background-image: url('/static/img/p00.jpg');
+}
+
+.m01 {
+    background-image: url('/static/img/p01.jpg')
+}
+
+.m02 {
+    background-image: url('/static/img/p02.jpg')
+}
+
+.m03 {
+    background-image: url('/static/img/p03.jpg')
+}
+
+.m04 {
+    background-image: url('/static/img/p04.jpg')
+}
+
+.m05 {
+    background-image: url('/static/img/p05.jpg')
+}
+
+.m06 {
+    background-image: url('/static/img/p06.jpg')
+}
+
+.m07 {
+    background-image: url('/static/img/p07.jpg')
+}
+
+.m08 {
+    background-image: url('/static/img/p08.jpg')
+}
+
+.m09 {
+    background-image: url('/static/img/p09.jpg')
+}
+
+.paginator {display: none;}

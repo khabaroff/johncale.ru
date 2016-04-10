@@ -20,7 +20,7 @@
 .pt-perspective {
     position: relative;
     width: 100%;
-    /*height: 100%;*/
+    height: 100%;
     /*-webkit-perspective: 1200px;*/
     /*-moz-perspective: 1200px;*/
     /*perspective: 1200px;*/
@@ -54,28 +54,4 @@
 
 .pt-page-ontop {
     z-index: 999;
-}
-
-.red {
-    background: red;
-}
-
-.blue {
-    background: blue;
-}
-
-.yellow {
-    background: yellow;
-}
-
-.pink {
-    background: pink;
-}
-
-.green {
-    background: green;
-}
-
-.orange {
-    background: orange;
 }
