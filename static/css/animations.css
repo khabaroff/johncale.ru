@@ -1,18 +1,21 @@
+.over {overflow: hidden;}
+.overauto {overflow: auto;}
+
 .pt-page-moveFromLeft {
-    -webkit-animation: moveFromLeft .8s ease both;
-    animation: moveFromLeft .8s ease both;
+    -webkit-animation: moveFromLeft .9s ease both;
+    animation: moveFromLeft .9s ease both;
     overflow: hidden;
 }
 
 .pt-page-moveFromRight {
-    -webkit-animation: moveFromRight .8s ease both;
-    animation: moveFromRight .8s ease both;
+    -webkit-animation: moveFromRight .9s ease both;
+    animation: moveFromRight .9s ease both;
     overflow: hidden;
 }
 
 .pt-page-fade {
-    -webkit-animation: fade 0.3s ease both;
-    animation: fade 0.3s ease both;
+    -webkit-animation: fade 0.1s ease both;
+    animation: fade 0.1s ease both;
     overflow: hidden;
 }
 
@@ -31,7 +34,6 @@
 
 @keyframes moveFromLeft {
     from {
-        -webkit-transform: translateX(-10%);
         transform: translateX(-10%);
         opacity: 0.4;
     }
@@ -52,7 +54,6 @@
 
 @keyframes moveFromRight {
     from {
-        -webkit-transform: translateX(10%);
         transform: translateX(10%);
         opacity: 0.4;
     }
@@ -62,7 +63,7 @@
 }
 
 @-webkit-keyframes fade {
-    from {
+    from { opacity: 1;
     }
     to {
         opacity: 0;
@@ -70,7 +71,7 @@
 }
 
 @keyframes fade {
-    from {
+    from { opacity: 1;
     }
     to {
         opacity: 0;

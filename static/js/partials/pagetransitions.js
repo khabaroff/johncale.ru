@@ -56,6 +56,8 @@ var transition = (function () {
 
         isAnimating = true;
 
+        document.body.className = "over";
+
         $nextPage.addClass('pt-page-current')
 
         var outClass = '',
@@ -102,6 +104,9 @@ var transition = (function () {
         endNextPage = false;
         resetPage($outpage, $inpage);
         isAnimating = false;
+
+
+        document.body.className = "overauto";
 
         callback instanceof Function && callback()
     }
