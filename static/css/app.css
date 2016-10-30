@@ -17,6 +17,22 @@ h1.smaller {
     font-size: 4rem;
 }
 
+
+.maintitle {
+    color: white;
+    text-align: center;
+}
+
+.subtitle {
+    color: white;
+    font-family: 'BalticaItalic', sans-serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: -22px;
+}
+
+
 p {
     font-size: 1.3rem;
     font-family: 'Baltica', sans-serif;
@@ -261,9 +277,20 @@ iframe {
         margin-bottom: 10px;
     }
 
-    /*.coub, .coubinleft {*/
-    /*margin-top: 0;*/
-    /*}*/
+
+        h1 { font-size: 3rem; }
+        h1.smaller {
+            font-size: 2rem;
+        }
+
+
+    .subtitle {
+        font-size: 1rem;
+        margin-top: 0px;
+    }
+
+
+
 
 }
 
@@ -312,19 +339,7 @@ iframe {
     }
 }
 
-.maintitle {
-    color: white;
-    text-align: center;
-}
 
-.subtitle {
-    color: white;
-    font-family: 'BalticaItalic', sans-serif;
-    font-style: italic;
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: -22px;
-}
 
 .v-centered {
     position: absolute;
