@@ -11,8 +11,8 @@
 }
 
 .pt-page-fade {
-    -webkit-animation: fade 0s ease both;
-    animation: fade 0s ease both;
+    -webkit-animation: fade 0.3s ease both;
+    animation: fade 0.3s ease both;
     overflow: hidden;
 }
 

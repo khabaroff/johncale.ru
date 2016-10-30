@@ -1,37 +1,36 @@
 var transition = (function () {
-    var global = {
-        animationEndEventName: undefined
-    }
+    var _animationEndEventName;
 
     function animationEndEventName() {
-        if (global.animationEndEventName !== undefined) {
-            return !!global.animationEndEventName
+        if (_animationEndEventName !== undefined) {
+            return _animationEndEventName;
         }
 
         var detectedAnimation,
             el = document.createElement('animationdetector'),
             animations = {
-                'WebkitAnimation': 'webkitAnimationEnd',
-                'OAnimation': 'oAnimationEnd oanimationend',
-                'msAnimation': 'animationend',
-                'animation': 'animationend'
-            }
+                'animation' : 'animationend',
+                'WebkitAnimation' : 'webkitAnimationEnd',
+                // see also http://ianlunn.co.uk/articles/opera-12-otransitionend-bugs-and-workarounds/
+                'OAnimation' : 'oanimationend', // also oAnimationEnd
+                'msAnimation' : 'animationend'
+            };
 
         Object.keys(animations).some(function (animation) {
             if (el.style[animation] !== undefined) {
-                detectedAnimation = animations[animation]
+                detectedAnimation = animations[animation];
 
                 return true
             }
 
             return false
-        })
+        });
 
         if (!detectedAnimation) {
             detectedAnimation = false
         }
 
-        return (global.animationEndEventName = detectedAnimation)
+        return (_animationEndEventName = detectedAnimation);
     }
 
     var isAnimating = false,
